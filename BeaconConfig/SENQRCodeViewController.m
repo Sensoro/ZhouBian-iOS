@@ -18,6 +18,7 @@
 
 
 static NSString * const kWeChatConfigPrefix = @"http://zb.weixin.qq.com/nearby/device/";
+static NSString * const kWeChatConfigPrefixs = @"https://zb.weixin.qq.com/nearby/device/";
 
 
 @interface SENQRCodeViewController () <UINavigationControllerDelegate,UIImagePickerControllerDelegate>{
@@ -510,7 +511,7 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info{
         [self checkYunzi:value];
     }
     
-    if ([value hasPrefix:kWeChatConfigPrefix]){
+    if ([value hasPrefix:kWeChatConfigPrefix] ||[value hasPrefix:kWeChatConfigPrefixs]){
         NSURL * url = [NSURL URLWithString:value];
         
         void (^errorTip)(void) = ^{

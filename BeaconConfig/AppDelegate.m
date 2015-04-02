@@ -7,6 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "SENQRCodeViewController.h"
+#import "BaseNavigationController.h"
+#import "SNBeaconObserver.h"
+#import "SVProgressHUD.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +21,23 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    
+    SENQRCodeViewController *controller = [[SENQRCodeViewController alloc]init];
+    controller.keepShow = YES;
+    controller.type = ScanTypeConfig;
+    controller.tipSring =  NSLocalizedString(@"QR_SCAN_TIP_CONFIG", @"扫描\"微信摇一摇·周边\"后台提供的设备配置二维码");
+    BaseNavigationController *nav = [[BaseNavigationController alloc]initWithRootViewController:controller];
+    self.window.rootViewController = nav;
+    
+    
+    [[SNBeaconObserver sharedInstance] startService:NO];
+
+    [SVProgressHUD setBackgroundColor:[UIColor blackColor]];
+    [SVProgressHUD setForegroundColor:[UIColor whiteColor]];
+    
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

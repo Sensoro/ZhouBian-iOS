@@ -9,11 +9,38 @@
 /* Begin PBXBuildFile section */
 		8483327E1ACB9D5C005ECD03 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8483327D1ACB9D5C005ECD03 /* main.m */; };
 		848332811ACB9D5C005ECD03 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 848332801ACB9D5C005ECD03 /* AppDelegate.m */; };
-		848332841ACB9D5C005ECD03 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848332831ACB9D5C005ECD03 /* ViewController.m */; };
 		848332871ACB9D5C005ECD03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848332851ACB9D5C005ECD03 /* Main.storyboard */; };
 		848332891ACB9D5C005ECD03 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 848332881ACB9D5C005ECD03 /* Images.xcassets */; };
 		8483328C1ACB9D5C005ECD03 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8483328A1ACB9D5C005ECD03 /* LaunchScreen.xib */; };
 		848332981ACB9D5C005ECD03 /* BeaconConfigTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 848332971ACB9D5C005ECD03 /* BeaconConfigTests.m */; };
+		848332A31ACB9E9C005ECD03 /* SENQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848332A21ACB9E9C005ECD03 /* SENQRCodeViewController.m */; };
+		848332BF1ACB9ED1005ECD03 /* libzbar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 848332A61ACB9ED1005ECD03 /* libzbar.a */; };
+		848332C71ACB9FF0005ECD03 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 848332C91ACB9FF0005ECD03 /* Localizable.strings */; };
+		848332D01ACBA074005ECD03 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848332CF1ACBA074005ECD03 /* BaseNavigationController.m */; };
+		848332D51ACBA0D4005ECD03 /* UIImage+BM.m in Sources */ = {isa = PBXBuildFile; fileRef = 848332D21ACBA0D4005ECD03 /* UIImage+BM.m */; };
+		848332D61ACBA0D4005ECD03 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 848332D41ACBA0D4005ECD03 /* UIImage+Color.m */; };
+		848332D81ACBA20F005ECD03 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 848332D71ACBA20F005ECD03 /* libicucore.dylib */; };
+		848332DA1ACBA216005ECD03 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 848332D91ACBA216005ECD03 /* libz.dylib */; };
+		848332DC1ACBA225005ECD03 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 848332DB1ACBA225005ECD03 /* libiconv.dylib */; };
+		848332E01ACBCD22005ECD03 /* FunctionSelectController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848332DF1ACBCD22005ECD03 /* FunctionSelectController.m */; };
+		848332E41ACBD072005ECD03 /* SimulateController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848332E31ACBD072005ECD03 /* SimulateController.m */; };
+		848332E71ACBD096005ECD03 /* ConfigController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848332E61ACBD096005ECD03 /* ConfigController.m */; };
+		848332EC1ACBD727005ECD03 /* BroadcastConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 848332EB1ACBD727005ECD03 /* BroadcastConfig.m */; };
+		848332FA1ACBE43A005ECD03 /* SNBeaconObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 848332F91ACBE43A005ECD03 /* SNBeaconObserver.m */; };
+		848333011ACBE511005ECD03 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 848332FD1ACBE511005ECD03 /* SVIndefiniteAnimatedView.m */; };
+		848333021ACBE511005ECD03 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 848332FE1ACBE511005ECD03 /* SVProgressHUD.bundle */; };
+		848333031ACBE511005ECD03 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 848333001ACBE511005ECD03 /* SVProgressHUD.m */; };
+		848333071ACBF14B005ECD03 /* Animator.m in Sources */ = {isa = PBXBuildFile; fileRef = 848333061ACBF14B005ECD03 /* Animator.m */; };
+		848333091ACC0A4F005ECD03 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848333081ACC0A4F005ECD03 /* CoreLocation.framework */; };
+		8483330B1ACC0A55005ECD03 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8483330A1ACC0A55005ECD03 /* CoreBluetooth.framework */; };
+		8483330D1ACC0A7B005ECD03 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8483330C1ACC0A7B005ECD03 /* Security.framework */; };
+		8483330F1ACC0C9A005ECD03 /* SensoroBeaconKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8483330E1ACC0C9A005ECD03 /* SensoroBeaconKit.framework */; };
+		848333151ACC3AF8005ECD03 /* MultiplePulsingHaloLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 848333121ACC3AF8005ECD03 /* MultiplePulsingHaloLayer.m */; };
+		848333161ACC3AF8005ECD03 /* PulsingHaloLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 848333141ACC3AF8005ECD03 /* PulsingHaloLayer.m */; };
+		8483331B1ACC423F005ECD03 /* RTSpinKitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8483331A1ACC423F005ECD03 /* RTSpinKitView.m */; };
+		848333231ACCEB4C005ECD03 /* FBKVOController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848333201ACCEB4C005ECD03 /* FBKVOController.m */; };
+		848333241ACCEB4C005ECD03 /* NSObject+FBKVOController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848333221ACCEB4C005ECD03 /* NSObject+FBKVOController.m */; };
+		848333281ACD150D005ECD03 /* SelectButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 848333271ACD150D005ECD03 /* SelectButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +59,87 @@
 		8483327D1ACB9D5C005ECD03 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8483327F1ACB9D5C005ECD03 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		848332801ACB9D5C005ECD03 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		848332821ACB9D5C005ECD03 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		848332831ACB9D5C005ECD03 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		848332861ACB9D5C005ECD03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		848332881ACB9D5C005ECD03 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8483328B1ACB9D5C005ECD03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		848332911ACB9D5C005ECD03 /* BeaconConfigTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeaconConfigTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		848332961ACB9D5C005ECD03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		848332971ACB9D5C005ECD03 /* BeaconConfigTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeaconConfigTests.m; sourceTree = "<group>"; };
+		848332A11ACB9E9C005ECD03 /* SENQRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SENQRCodeViewController.h; sourceTree = "<group>"; };
+		848332A21ACB9E9C005ECD03 /* SENQRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SENQRCodeViewController.m; sourceTree = "<group>"; };
+		848332A61ACB9ED1005ECD03 /* libzbar.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libzbar.a; sourceTree = "<group>"; };
+		848332A81ACB9ED1005ECD03 /* Decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Decoder.h; sourceTree = "<group>"; };
+		848332A91ACB9ED1005ECD03 /* Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Exception.h; sourceTree = "<group>"; };
+		848332AA1ACB9ED1005ECD03 /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
+		848332AB1ACB9ED1005ECD03 /* ImageScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageScanner.h; sourceTree = "<group>"; };
+		848332AC1ACB9ED1005ECD03 /* Processor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Processor.h; sourceTree = "<group>"; };
+		848332AD1ACB9ED1005ECD03 /* QZBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QZBar.h; sourceTree = "<group>"; };
+		848332AE1ACB9ED1005ECD03 /* QZBarImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QZBarImage.h; sourceTree = "<group>"; };
+		848332AF1ACB9ED1005ECD03 /* Scanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scanner.h; sourceTree = "<group>"; };
+		848332B01ACB9ED1005ECD03 /* Symbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Symbol.h; sourceTree = "<group>"; };
+		848332B11ACB9ED1005ECD03 /* Video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
+		848332B21ACB9ED1005ECD03 /* Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Window.h; sourceTree = "<group>"; };
+		848332B31ACB9ED1005ECD03 /* zbargtk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zbargtk.h; sourceTree = "<group>"; };
+		848332B41ACB9ED1005ECD03 /* zbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zbar.h; sourceTree = "<group>"; };
+		848332B51ACB9ED1005ECD03 /* ZBarCameraSimulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarCameraSimulator.h; sourceTree = "<group>"; };
+		848332B61ACB9ED1005ECD03 /* ZBarCaptureReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarCaptureReader.h; sourceTree = "<group>"; };
+		848332B71ACB9ED1005ECD03 /* ZBarHelpController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarHelpController.h; sourceTree = "<group>"; };
+		848332B81ACB9ED1005ECD03 /* ZBarImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarImage.h; sourceTree = "<group>"; };
+		848332B91ACB9ED1005ECD03 /* ZBarImageScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarImageScanner.h; sourceTree = "<group>"; };
+		848332BA1ACB9ED1005ECD03 /* ZBarReaderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarReaderController.h; sourceTree = "<group>"; };
+		848332BB1ACB9ED1005ECD03 /* ZBarReaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarReaderView.h; sourceTree = "<group>"; };
+		848332BC1ACB9ED1005ECD03 /* ZBarReaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarReaderViewController.h; sourceTree = "<group>"; };
+		848332BD1ACB9ED1005ECD03 /* ZBarSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarSDK.h; sourceTree = "<group>"; };
+		848332BE1ACB9ED1005ECD03 /* ZBarSymbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarSymbol.h; sourceTree = "<group>"; };
+		848332C21ACB9F5A005ECD03 /* BMMacroDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMMacroDefinition.h; sourceTree = "<group>"; };
+		848332C51ACB9FD9005ECD03 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		848332C61ACB9FD9005ECD03 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		848332C81ACB9FF0005ECD03 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		848332CA1ACB9FF2005ECD03 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		848332CB1ACB9FF9005ECD03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		848332CE1ACBA074005ECD03 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		848332CF1ACBA074005ECD03 /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		848332D11ACBA0D4005ECD03 /* UIImage+BM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BM.h"; sourceTree = "<group>"; };
+		848332D21ACBA0D4005ECD03 /* UIImage+BM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BM.m"; sourceTree = "<group>"; };
+		848332D31ACBA0D4005ECD03 /* UIImage+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
+		848332D41ACBA0D4005ECD03 /* UIImage+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
+		848332D71ACBA20F005ECD03 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		848332D91ACBA216005ECD03 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		848332DB1ACBA225005ECD03 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		848332DE1ACBCD22005ECD03 /* FunctionSelectController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunctionSelectController.h; sourceTree = "<group>"; };
+		848332DF1ACBCD22005ECD03 /* FunctionSelectController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FunctionSelectController.m; sourceTree = "<group>"; };
+		848332E21ACBD072005ECD03 /* SimulateController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimulateController.h; sourceTree = "<group>"; };
+		848332E31ACBD072005ECD03 /* SimulateController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimulateController.m; sourceTree = "<group>"; };
+		848332E51ACBD096005ECD03 /* ConfigController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigController.h; sourceTree = "<group>"; };
+		848332E61ACBD096005ECD03 /* ConfigController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigController.m; sourceTree = "<group>"; };
+		848332EA1ACBD727005ECD03 /* BroadcastConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BroadcastConfig.h; sourceTree = "<group>"; };
+		848332EB1ACBD727005ECD03 /* BroadcastConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BroadcastConfig.m; sourceTree = "<group>"; };
+		848332F81ACBE43A005ECD03 /* SNBeaconObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNBeaconObserver.h; sourceTree = "<group>"; };
+		848332F91ACBE43A005ECD03 /* SNBeaconObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNBeaconObserver.m; sourceTree = "<group>"; };
+		848332FC1ACBE511005ECD03 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		848332FD1ACBE511005ECD03 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		848332FE1ACBE511005ECD03 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		848332FF1ACBE511005ECD03 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		848333001ACBE511005ECD03 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		848333051ACBF14B005ECD03 /* Animator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animator.h; sourceTree = "<group>"; };
+		848333061ACBF14B005ECD03 /* Animator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animator.m; sourceTree = "<group>"; };
+		848333081ACC0A4F005ECD03 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		8483330A1ACC0A55005ECD03 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		8483330C1ACC0A7B005ECD03 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		8483330E1ACC0C9A005ECD03 /* SensoroBeaconKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SensoroBeaconKit.framework; sourceTree = "<group>"; };
+		848333111ACC3AF8005ECD03 /* MultiplePulsingHaloLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiplePulsingHaloLayer.h; sourceTree = "<group>"; };
+		848333121ACC3AF8005ECD03 /* MultiplePulsingHaloLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiplePulsingHaloLayer.m; sourceTree = "<group>"; };
+		848333131ACC3AF8005ECD03 /* PulsingHaloLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PulsingHaloLayer.h; sourceTree = "<group>"; };
+		848333141ACC3AF8005ECD03 /* PulsingHaloLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PulsingHaloLayer.m; sourceTree = "<group>"; };
+		848333191ACC423F005ECD03 /* RTSpinKitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTSpinKitView.h; sourceTree = "<group>"; };
+		8483331A1ACC423F005ECD03 /* RTSpinKitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTSpinKitView.m; sourceTree = "<group>"; };
+		8483331E1ACCEB4C005ECD03 /* FBKVOController-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FBKVOController-Prefix.pch"; sourceTree = "<group>"; };
+		8483331F1ACCEB4C005ECD03 /* FBKVOController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBKVOController.h; sourceTree = "<group>"; };
+		848333201ACCEB4C005ECD03 /* FBKVOController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBKVOController.m; sourceTree = "<group>"; };
+		848333211ACCEB4C005ECD03 /* NSObject+FBKVOController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+FBKVOController.h"; sourceTree = "<group>"; };
+		848333221ACCEB4C005ECD03 /* NSObject+FBKVOController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+FBKVOController.m"; sourceTree = "<group>"; };
+		848333261ACD150D005ECD03 /* SelectButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectButton.h; sourceTree = "<group>"; };
+		848333271ACD150D005ECD03 /* SelectButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +147,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8483330F1ACC0C9A005ECD03 /* SensoroBeaconKit.framework in Frameworks */,
+				8483330D1ACC0A7B005ECD03 /* Security.framework in Frameworks */,
+				8483330B1ACC0A55005ECD03 /* CoreBluetooth.framework in Frameworks */,
+				848333091ACC0A4F005ECD03 /* CoreLocation.framework in Frameworks */,
+				848332DC1ACBA225005ECD03 /* libiconv.dylib in Frameworks */,
+				848332DA1ACBA216005ECD03 /* libz.dylib in Frameworks */,
+				848332D81ACBA20F005ECD03 /* libicucore.dylib in Frameworks */,
+				848332BF1ACB9ED1005ECD03 /* libzbar.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				8483327A1ACB9D5C005ECD03 /* BeaconConfig */,
+				848332DD1ACBA22E005ECD03 /* Frameworks */,
 				848332941ACB9D5C005ECD03 /* BeaconConfigTests */,
 				848332791ACB9D5C005ECD03 /* Products */,
 			);
@@ -81,11 +190,12 @@
 		8483327A1ACB9D5C005ECD03 /* BeaconConfig */ = {
 			isa = PBXGroup;
 			children = (
-				8483327F1ACB9D5C005ECD03 /* AppDelegate.h */,
-				848332801ACB9D5C005ECD03 /* AppDelegate.m */,
-				848332821ACB9D5C005ECD03 /* ViewController.h */,
-				848332831ACB9D5C005ECD03 /* ViewController.m */,
-				848332851ACB9D5C005ECD03 /* Main.storyboard */,
+				848332A41ACB9EB8005ECD03 /* Vendors */,
+				848332C11ACB9F10005ECD03 /* Macros */,
+				848332C01ACB9EFB005ECD03 /* Utils */,
+				848332E91ACBD664005ECD03 /* Model */,
+				848332CC1ACBA03D005ECD03 /* Classes */,
+				848333251ACD14AB005ECD03 /* Views */,
 				848332881ACB9D5C005ECD03 /* Images.xcassets */,
 				8483328A1ACB9D5C005ECD03 /* LaunchScreen.xib */,
 				8483327B1ACB9D5C005ECD03 /* Supporting Files */,
@@ -97,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				8483327C1ACB9D5C005ECD03 /* Info.plist */,
+				848332C91ACB9FF0005ECD03 /* Localizable.strings */,
 				8483327D1ACB9D5C005ECD03 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -117,6 +228,184 @@
 				848332961ACB9D5C005ECD03 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		848332A41ACB9EB8005ECD03 /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				8483331D1ACCEB4C005ECD03 /* FBKVOController */,
+				848333181ACC423F005ECD03 /* RTSpinKitView */,
+				848333101ACC3AF8005ECD03 /* PulsingHalo */,
+				848332FB1ACBE511005ECD03 /* SVProgressHUD */,
+				848332A51ACB9ED1005ECD03 /* ZBarSDK */,
+			);
+			name = Vendors;
+			sourceTree = "<group>";
+		};
+		848332A51ACB9ED1005ECD03 /* ZBarSDK */ = {
+			isa = PBXGroup;
+			children = (
+				848332A61ACB9ED1005ECD03 /* libzbar.a */,
+				848332A71ACB9ED1005ECD03 /* zbar */,
+				848332B41ACB9ED1005ECD03 /* zbar.h */,
+				848332B51ACB9ED1005ECD03 /* ZBarCameraSimulator.h */,
+				848332B61ACB9ED1005ECD03 /* ZBarCaptureReader.h */,
+				848332B71ACB9ED1005ECD03 /* ZBarHelpController.h */,
+				848332B81ACB9ED1005ECD03 /* ZBarImage.h */,
+				848332B91ACB9ED1005ECD03 /* ZBarImageScanner.h */,
+				848332BA1ACB9ED1005ECD03 /* ZBarReaderController.h */,
+				848332BB1ACB9ED1005ECD03 /* ZBarReaderView.h */,
+				848332BC1ACB9ED1005ECD03 /* ZBarReaderViewController.h */,
+				848332BD1ACB9ED1005ECD03 /* ZBarSDK.h */,
+				848332BE1ACB9ED1005ECD03 /* ZBarSymbol.h */,
+			);
+			path = ZBarSDK;
+			sourceTree = "<group>";
+		};
+		848332A71ACB9ED1005ECD03 /* zbar */ = {
+			isa = PBXGroup;
+			children = (
+				848332A81ACB9ED1005ECD03 /* Decoder.h */,
+				848332A91ACB9ED1005ECD03 /* Exception.h */,
+				848332AA1ACB9ED1005ECD03 /* Image.h */,
+				848332AB1ACB9ED1005ECD03 /* ImageScanner.h */,
+				848332AC1ACB9ED1005ECD03 /* Processor.h */,
+				848332AD1ACB9ED1005ECD03 /* QZBar.h */,
+				848332AE1ACB9ED1005ECD03 /* QZBarImage.h */,
+				848332AF1ACB9ED1005ECD03 /* Scanner.h */,
+				848332B01ACB9ED1005ECD03 /* Symbol.h */,
+				848332B11ACB9ED1005ECD03 /* Video.h */,
+				848332B21ACB9ED1005ECD03 /* Window.h */,
+				848332B31ACB9ED1005ECD03 /* zbargtk.h */,
+			);
+			path = zbar;
+			sourceTree = "<group>";
+		};
+		848332C01ACB9EFB005ECD03 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				848333051ACBF14B005ECD03 /* Animator.h */,
+				848333061ACBF14B005ECD03 /* Animator.m */,
+				848332D11ACBA0D4005ECD03 /* UIImage+BM.h */,
+				848332D21ACBA0D4005ECD03 /* UIImage+BM.m */,
+				848332D31ACBA0D4005ECD03 /* UIImage+Color.h */,
+				848332D41ACBA0D4005ECD03 /* UIImage+Color.m */,
+				848332F81ACBE43A005ECD03 /* SNBeaconObserver.h */,
+				848332F91ACBE43A005ECD03 /* SNBeaconObserver.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		848332C11ACB9F10005ECD03 /* Macros */ = {
+			isa = PBXGroup;
+			children = (
+				848332C21ACB9F5A005ECD03 /* BMMacroDefinition.h */,
+			);
+			name = Macros;
+			sourceTree = "<group>";
+		};
+		848332CC1ACBA03D005ECD03 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				848332CD1ACBA058005ECD03 /* BaseController */,
+				848332A11ACB9E9C005ECD03 /* SENQRCodeViewController.h */,
+				848332A21ACB9E9C005ECD03 /* SENQRCodeViewController.m */,
+				848332DE1ACBCD22005ECD03 /* FunctionSelectController.h */,
+				848332DF1ACBCD22005ECD03 /* FunctionSelectController.m */,
+				848332E21ACBD072005ECD03 /* SimulateController.h */,
+				848332E31ACBD072005ECD03 /* SimulateController.m */,
+				848332E51ACBD096005ECD03 /* ConfigController.h */,
+				848332E61ACBD096005ECD03 /* ConfigController.m */,
+				8483327F1ACB9D5C005ECD03 /* AppDelegate.h */,
+				848332801ACB9D5C005ECD03 /* AppDelegate.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		848332CD1ACBA058005ECD03 /* BaseController */ = {
+			isa = PBXGroup;
+			children = (
+				848332CE1ACBA074005ECD03 /* BaseNavigationController.h */,
+				848332CF1ACBA074005ECD03 /* BaseNavigationController.m */,
+			);
+			name = BaseController;
+			sourceTree = "<group>";
+		};
+		848332DD1ACBA22E005ECD03 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8483330E1ACC0C9A005ECD03 /* SensoroBeaconKit.framework */,
+				8483330C1ACC0A7B005ECD03 /* Security.framework */,
+				8483330A1ACC0A55005ECD03 /* CoreBluetooth.framework */,
+				848333081ACC0A4F005ECD03 /* CoreLocation.framework */,
+				848332DB1ACBA225005ECD03 /* libiconv.dylib */,
+				848332D71ACBA20F005ECD03 /* libicucore.dylib */,
+				848332D91ACBA216005ECD03 /* libz.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		848332E91ACBD664005ECD03 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				848332EA1ACBD727005ECD03 /* BroadcastConfig.h */,
+				848332EB1ACBD727005ECD03 /* BroadcastConfig.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		848332FB1ACBE511005ECD03 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				848332FC1ACBE511005ECD03 /* SVIndefiniteAnimatedView.h */,
+				848332FD1ACBE511005ECD03 /* SVIndefiniteAnimatedView.m */,
+				848332FE1ACBE511005ECD03 /* SVProgressHUD.bundle */,
+				848332FF1ACBE511005ECD03 /* SVProgressHUD.h */,
+				848333001ACBE511005ECD03 /* SVProgressHUD.m */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		848333101ACC3AF8005ECD03 /* PulsingHalo */ = {
+			isa = PBXGroup;
+			children = (
+				848333111ACC3AF8005ECD03 /* MultiplePulsingHaloLayer.h */,
+				848333121ACC3AF8005ECD03 /* MultiplePulsingHaloLayer.m */,
+				848333131ACC3AF8005ECD03 /* PulsingHaloLayer.h */,
+				848333141ACC3AF8005ECD03 /* PulsingHaloLayer.m */,
+			);
+			path = PulsingHalo;
+			sourceTree = "<group>";
+		};
+		848333181ACC423F005ECD03 /* RTSpinKitView */ = {
+			isa = PBXGroup;
+			children = (
+				848333191ACC423F005ECD03 /* RTSpinKitView.h */,
+				8483331A1ACC423F005ECD03 /* RTSpinKitView.m */,
+			);
+			path = RTSpinKitView;
+			sourceTree = "<group>";
+		};
+		8483331D1ACCEB4C005ECD03 /* FBKVOController */ = {
+			isa = PBXGroup;
+			children = (
+				8483331E1ACCEB4C005ECD03 /* FBKVOController-Prefix.pch */,
+				8483331F1ACCEB4C005ECD03 /* FBKVOController.h */,
+				848333201ACCEB4C005ECD03 /* FBKVOController.m */,
+				848333211ACCEB4C005ECD03 /* NSObject+FBKVOController.h */,
+				848333221ACCEB4C005ECD03 /* NSObject+FBKVOController.m */,
+			);
+			path = FBKVOController;
+			sourceTree = "<group>";
+		};
+		848333251ACD14AB005ECD03 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				848332851ACB9D5C005ECD03 /* Main.storyboard */,
+				848333261ACD150D005ECD03 /* SelectButton.h */,
+				848333271ACD150D005ECD03 /* SelectButton.m */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,7 +488,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				848333021ACBE511005ECD03 /* SVProgressHUD.bundle in Resources */,
 				848332871ACB9D5C005ECD03 /* Main.storyboard in Resources */,
+				848332C71ACB9FF0005ECD03 /* Localizable.strings in Resources */,
 				8483328C1ACB9D5C005ECD03 /* LaunchScreen.xib in Resources */,
 				848332891ACB9D5C005ECD03 /* Images.xcassets in Resources */,
 			);
@@ -219,9 +510,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				848332841ACB9D5C005ECD03 /* ViewController.m in Sources */,
+				848333011ACBE511005ECD03 /* SVIndefiniteAnimatedView.m in Sources */,
 				848332811ACB9D5C005ECD03 /* AppDelegate.m in Sources */,
+				8483331B1ACC423F005ECD03 /* RTSpinKitView.m in Sources */,
+				848333031ACBE511005ECD03 /* SVProgressHUD.m in Sources */,
+				848333151ACC3AF8005ECD03 /* MultiplePulsingHaloLayer.m in Sources */,
+				848332D61ACBA0D4005ECD03 /* UIImage+Color.m in Sources */,
+				848333281ACD150D005ECD03 /* SelectButton.m in Sources */,
+				848333071ACBF14B005ECD03 /* Animator.m in Sources */,
+				848332D51ACBA0D4005ECD03 /* UIImage+BM.m in Sources */,
+				848332EC1ACBD727005ECD03 /* BroadcastConfig.m in Sources */,
 				8483327E1ACB9D5C005ECD03 /* main.m in Sources */,
+				848333161ACC3AF8005ECD03 /* PulsingHaloLayer.m in Sources */,
+				848332FA1ACBE43A005ECD03 /* SNBeaconObserver.m in Sources */,
+				848332A31ACB9E9C005ECD03 /* SENQRCodeViewController.m in Sources */,
+				848332E41ACBD072005ECD03 /* SimulateController.m in Sources */,
+				848332E71ACBD096005ECD03 /* ConfigController.m in Sources */,
+				848333241ACCEB4C005ECD03 /* NSObject+FBKVOController.m in Sources */,
+				848332D01ACBA074005ECD03 /* BaseNavigationController.m in Sources */,
+				848332E01ACBCD22005ECD03 /* FunctionSelectController.m in Sources */,
+				848333231ACCEB4C005ECD03 /* FBKVOController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +556,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				848332861ACB9D5C005ECD03 /* Base */,
+				848332C51ACB9FD9005ECD03 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -256,8 +565,19 @@
 			isa = PBXVariantGroup;
 			children = (
 				8483328B1ACB9D5C005ECD03 /* Base */,
+				848332C61ACB9FD9005ECD03 /* zh-Hans */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		848332C91ACB9FF0005ECD03 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				848332C81ACB9FF0005ECD03 /* zh-Hans */,
+				848332CA1ACB9FF2005ECD03 /* en */,
+				848332CB1ACB9FF9005ECD03 /* Base */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -343,9 +663,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = BeaconConfig/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BeaconConfig/ZBarSDK",
+					"$(PROJECT_DIR)/BeaconConfig/SensoroBeaconKit",
+				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -353,9 +685,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = BeaconConfig/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BeaconConfig/ZBarSDK",
+					"$(PROJECT_DIR)/BeaconConfig/SensoroBeaconKit",
+				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

@@ -1,0 +1,26 @@
+/* 
+  Localizable.strings
+  BeaconConfig
+
+  Created by skyming on 15/4/1.
+  Copyright (c) 2015年 Sensoro. All rights reserved.
+*/
+
+// 2015-04-01 add by skyming
+"QR_SCAN_TITLE_CONFIG" = "获取配置";
+"QR_SCAN_TIP_CONFIG" = "扫描\"微信摇一摇·周边\"后台提供的设备配置二维码";
+"FUNCTION_SELECTED" = "选择功能";
+"USE_IPHONE_DEVICE" = "使用iPhone模拟设备";
+"START_CONFIG_DEVICE" = "开始配置设备（支持云子、云盒、云标）";
+"SIMULATING" = "模拟中";
+"QR_SCAN_TITLE_BEACON" = "扫描设备二维码";
+"QR_SCAN_TIP_BEACON" = "扫描云子、云盒、云标等硬件设备上的二维码";
+"START_CONFIG" = "开始配置";
+
+// 2015-04-02 add by skyming
+"YunziInvalid" = "云子不合法";
+"TIP" = "提示";
+"QR_CODE_INCORRECT" = "二维码错误，请扫描正确的二维码";
+"OK" = "确定";
+"CONFIG_FORMAT_WRONG" = "配置格式错误! 请扫描标准的微信周边URL二维码";
+"BEACON_NOT_FOUND" = "未发现此云子，原因可能如下：\n 1: 尚未扫描到此Beacon，请稍候重试。 \n 2: 此Beacon没有工作。\n3: 此Beacon广播被加密，请添加相应的广播密钥。";

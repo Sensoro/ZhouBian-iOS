@@ -8,6 +8,8 @@
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.sensoro.$(PRODUCT_NAME:rfc1034identifier)</string>
+	<key>CFBundleDisplayName</key>
+	<string>摇周边工具</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>

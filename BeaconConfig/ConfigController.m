@@ -81,7 +81,11 @@
                         }else{
                             [SVProgressHUD showImage:[UIImage imageNamed:@"failure"] status:@"配置失败" maskType:SVProgressHUDMaskTypeNone];
                         }
+                        
                         [_configBeacon disconnect];
+                        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                            [self backToPro];
+                        });
                     }
                 }];
                 
@@ -104,6 +108,10 @@
                             [SVProgressHUD showImage:[UIImage imageNamed:@"failure"] status:@"配置失败"];
                         }
                         [_configBeacon disconnect];
+                        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                            [self backToPro];
+                        });
+
                     }
 
                 }];
@@ -114,13 +122,18 @@
                 configSuccess &= NO;
                 [_loadingView removeFromSuperview];
                 [SVProgressHUD showImage:[UIImage imageNamed:@"failure"] status:@"配置失败"];
+                
+                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                    [self backToPro];
+                });
+
             };
         }];
     }else{
         
         UIAlertView * alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"TIP", @"提示")
                                                          message:NSLocalizedString(@"BEACON_NOT_FOUND", @"Beacon尚未发现")
-                                                        delegate:nil
+                                                        delegate:self
                                                cancelButtonTitle:NSLocalizedString(@"OK", @"确定")
                                                otherButtonTitles:nil];
         
@@ -132,7 +145,6 @@
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    
     
 }
 
@@ -177,6 +189,12 @@
     [self.navigationController.view.layer addAnimation:ca forKey:nil];
     
     [self.navigationController popViewControllerAnimated:YES];
+}
+
+#pragma mark - UIAlertView Delegate
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    NSLog(@"");
+    [self backToPro];
 }
 
 /*

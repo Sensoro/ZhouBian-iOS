@@ -157,7 +157,6 @@
         sn = [value substringWithRange:NSMakeRange(0,12)];
     }
     
-    
     if (!isYunzi) {
         [SVProgressHUD showErrorWithStatus:NSLocalizedString(@"YunziInvalid", nil)];
         return ;
@@ -165,13 +164,10 @@
     
     SBKBeacon* beaconObject =  [SNBeaconObserver sharedInstance].allYunziDict[sn];
 
-    if ([beaconObject isKindOfClass:[SBKBeacon class]]) {
-        [SNBeaconObserver sharedInstance].configBeacon = beaconObject;
-    }
+    [SNBeaconObserver sharedInstance].configBeacon = beaconObject;
     
     ConfigController *config = [[ConfigController alloc]init];
     [self.navigationController pushViewController:config animated:YES];
-    
 }
 
 

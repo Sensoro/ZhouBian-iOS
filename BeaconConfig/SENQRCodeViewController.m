@@ -250,6 +250,11 @@ static NSString * const kWeChatConfigPrefixs = @"https://zb.weixin.qq.com/nearby
     
     _captureDevice = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
     
+    // Ipad 无灯处理
+    if (![_captureDevice hasTorch]) {
+        _openFlashLightButton.enabled = NO;
+        _openFlashLightButton.layer.borderColor = [UIColor grayColor].CGColor;
+    }
     // IOS 7 下 自动对焦 Near
     if ([_captureDevice respondsToSelector:@selector(isAutoFocusRangeRestrictionSupported)] && _captureDevice.autoFocusRangeRestrictionSupported) {
         // If we are on an iOS version that supports AutoFocusRangeRestriction and the device supports it

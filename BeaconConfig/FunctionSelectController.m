@@ -66,6 +66,7 @@
     [self.view addSubview:_simulateButton];
     [self.view addSubview:_startConfigButton];
     [self setGradientbgColor];
+    
 }
 
 - (void)viewWillDisappear:(BOOL)animated{
@@ -133,7 +134,11 @@
     controller.tipSring = NSLocalizedString(@"QR_SCAN_TIP_BEACON", @"扫描云子、云盒、云标等硬件设备上的二维码");
     controller.completion = ^(NSString *value){
         NSLog(@"云子%@",value);
-        [self checkYunzi:value];
+        
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [self checkYunzi:value];
+        });
+
     };
     
     [self.navigationController pushViewController:controller animated:YES];

@@ -756,6 +756,7 @@
 				8483329D1ACB9D5C005ECD03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8483329E1ACB9D5C005ECD03 /* Build configuration list for PBXNativeTarget "BeaconConfigTests" */ = {
 			isa = XCConfigurationList;
@@ -764,6 +765,7 @@
 				848332A01ACB9D5C005ECD03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

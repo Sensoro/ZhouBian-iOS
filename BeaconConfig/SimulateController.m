@@ -133,12 +133,12 @@
     
     if(uuid && major != -1 && minor != -1)
     {
-        CLBeaconRegion *region = [[CLBeaconRegion alloc] initWithProximityUUID:uuid major:0x9999 minor:0x9999 identifier:@"com.apple.VirtualBeacon"];
+        CLBeaconRegion *region = [[CLBeaconRegion alloc] initWithProximityUUID:uuid major:major minor:minor identifier:@"com.apple.VirtualBeacon"];
         peripheralData = [region peripheralDataWithMeasuredPower:@(-59)];
     }
     else if(uuid && major != -1)
     {
-        CLBeaconRegion *region = [[CLBeaconRegion alloc] initWithProximityUUID:uuid major:0x9999  identifier:@"com.apple.VirtualBeacon"];
+        CLBeaconRegion *region = [[CLBeaconRegion alloc] initWithProximityUUID:uuid major:major  identifier:@"com.apple.VirtualBeacon"];
         peripheralData = [region peripheralDataWithMeasuredPower:@(-59)];
     }
     else if(uuid)

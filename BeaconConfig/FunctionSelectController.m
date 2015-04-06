@@ -55,9 +55,6 @@
     _startConfigButton.center = CGPointMake(kScreen_Width/2.0, 65 + kScreen_Height*0.3);
 
     
-    // 修改从相册取二维码，状态栏变色问题
-    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
-    
 }
 
 - (void)viewWillAppear:(BOOL)animated{
@@ -66,6 +63,9 @@
     [self.view addSubview:_simulateButton];
     [self.view addSubview:_startConfigButton];
     [self setGradientbgColor];
+    
+    // 修改从相册取二维码，状态栏变色问题
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     
 }
 

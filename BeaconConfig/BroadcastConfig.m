@@ -22,9 +22,10 @@ singleton_implementation(BroadcastConfig)
 
 - (void)configSetting:(NSString *)uuid major:(NSString *)major minor:(NSString *)minor{
     
+    [[NSScanner scannerWithString:[self HanderHex:major]] scanHexInt:&_major];
+    [[NSScanner scannerWithString:[self HanderHex:minor]] scanHexInt:&_minor];
+    
     _uuid = [[NSUUID alloc]initWithUUIDString:uuid];
-    _major = major.intValue;
-    _minor = minor.intValue;
     
 }
 
@@ -35,5 +36,13 @@ singleton_implementation(BroadcastConfig)
     NSString *minor = setting[Minor_IR];
     
     [self configSetting:uuid major:major minor:minor];
+}
+
+// 去掉十六进制前缀 0x
+- (NSString *)HanderHex:(NSString *)hex{
+    if ([hex hasPrefix:@"0x"]) {
+        return  [hex substringFromIndex:2];
+    }
+    return hex;
 }
 @end

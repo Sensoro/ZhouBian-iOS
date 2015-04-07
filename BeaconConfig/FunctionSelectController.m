@@ -123,12 +123,12 @@
 
 - (void)configController{
     
-    CATransition *ca = [CATransition animation];
-    ca.type = @"oglFlip";
-    ca.subtype = kCATransitionFromRight;
-    ca.duration = 1.0;
-    [self.navigationController.view.layer addAnimation:ca forKey:nil];
-
+//    CATransition *ca = [CATransition animation];
+//    ca.type = @"oglFlip";
+//    ca.subtype = kCATransitionFromRight;
+//    ca.duration = 1.0;
+//    [self.navigationController.view.layer addAnimation:ca forKey:nil];
+//
     SENQRCodeViewController *controller = [[SENQRCodeViewController alloc]init];
     controller.type = ScanTypeQR;
     controller.tipSring = NSLocalizedString(@"QR_SCAN_TIP_BEACON", @"扫描云子、云盒、云标等硬件设备上的二维码");

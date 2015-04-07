@@ -182,12 +182,12 @@
 
 - (void)backToPro{
     
-    CATransition *ca = [CATransition animation];
-    ca.type = @"oglFlip";
-    ca.subtype = kCATransitionFromRight;
-    ca.duration = 1.0;
-    [self.navigationController.view.layer addAnimation:ca forKey:nil];
-    
+//    CATransition *ca = [CATransition animation];
+//    ca.type = @"oglFlip";
+//    ca.subtype = kCATransitionFromRight;
+//    ca.duration = 1.0;
+//    [self.navigationController.view.layer addAnimation:ca forKey:nil];
+//    
     [self.navigationController popViewControllerAnimated:YES];
 }
 

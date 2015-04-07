@@ -126,7 +126,7 @@
     major = [BroadcastConfig sharedBroadcastConfig].major;
     minor = [BroadcastConfig sharedBroadcastConfig].minor;
     
-    NSLog(@"Data Major: %d %x Minor: %d %x",major,major,minor,minor);
+    NSLog(@"模拟中 Major: %d %x Minor: %d %x",major,major,minor,minor);
     NSLog(@"UUID: %@",uuid.UUIDString);
     
     NSDictionary *peripheralData = nil;

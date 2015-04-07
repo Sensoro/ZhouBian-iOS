@@ -22,8 +22,17 @@ singleton_implementation(BroadcastConfig)
 
 - (void)configSetting:(NSString *)uuid major:(NSString *)major minor:(NSString *)minor{
     
-    [[NSScanner scannerWithString:[self HanderHex:major]] scanHexInt:&_major];
-    [[NSScanner scannerWithString:[self HanderHex:minor]] scanHexInt:&_minor];
+    if ([major hasPrefix:@"0x"]) {
+        [[NSScanner scannerWithString:[self HanderHex:major]] scanHexInt:&_major];
+    }else{
+        [[NSScanner scannerWithString:[self HanderHex:major]] scanInt:(int *)&_major];
+    }
+    
+    if ([minor hasPrefix:@"0x"]) {
+        [[NSScanner scannerWithString:[self HanderHex:minor]] scanHexInt:&_minor];
+    }else{
+        [[NSScanner scannerWithString:[self HanderHex:minor]] scanInt:(int *)&_minor];
+    }
     
     _uuid = [[NSUUID alloc]initWithUUIDString:uuid];
     

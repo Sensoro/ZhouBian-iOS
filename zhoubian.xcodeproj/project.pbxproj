@@ -593,7 +593,7 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = zhoubian;
-				PROVISIONING_PROFILE = "96595369-2e3e-445c-8925-5d355bdbd520";
+				PROVISIONING_PROFILE = "705f1445-67ac-4929-b7c8-a9a964892808";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -617,7 +617,7 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = zhoubian;
-				PROVISIONING_PROFILE = "96595369-2e3e-445c-8925-5d355bdbd520";
+				PROVISIONING_PROFILE = "705f1445-67ac-4929-b7c8-a9a964892808";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

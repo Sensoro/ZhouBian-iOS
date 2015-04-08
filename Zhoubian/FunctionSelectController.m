@@ -106,6 +106,7 @@
     [self.navigationController.view.layer addAnimation:ca forKey:nil];
     
     [self.navigationController popViewControllerAnimated:YES];
+    
 }
 
 - (void)simulateController{
@@ -123,22 +124,15 @@
 
 - (void)configController{
     
-//    CATransition *ca = [CATransition animation];
-//    ca.type = @"oglFlip";
-//    ca.subtype = kCATransitionFromRight;
-//    ca.duration = 1.0;
-//    [self.navigationController.view.layer addAnimation:ca forKey:nil];
-//
     SENQRCodeViewController *controller = [[SENQRCodeViewController alloc]init];
     controller.type = ScanTypeQR;
     controller.tipSring = NSLocalizedString(@"QR_SCAN_TIP_BEACON", @"扫描云子、云盒、云标等硬件设备上的二维码");
     controller.completion = ^(NSString *value){
         NSLog(@"云子%@",value);
         
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        dispatch_async(dispatch_get_main_queue(), ^{
             [self checkYunzi:value];
         });
-
     };
     
     [self.navigationController pushViewController:controller animated:YES];
@@ -172,7 +166,7 @@
     [SNBeaconObserver sharedInstance].configBeacon = beaconObject;
     
     ConfigController *config = [[ConfigController alloc]init];
-    [self.navigationController pushViewController:config animated:YES];
+    [self.navigationController pushViewController:config animated:NO];
 }
 
 

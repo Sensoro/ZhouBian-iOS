@@ -314,7 +314,7 @@ static NSString * const kWeChatConfigPrefixs = @"https://zb.weixin.qq.com/nearby
             dispatch_async(dispatch_get_main_queue(), ^{
                 if (_keepShow == NO) {
 
-                    [self.navigationController popViewControllerAnimated:YES];
+                    [self.navigationController popViewControllerAnimated:NO];
                 }else{
                     
                     [self checkConfig:value];
@@ -399,13 +399,7 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info{
         if (ret > 0) {
             if (_keepShow == NO) {
                 
-//                CATransition *ca = [CATransition animation];
-//                ca.type = @"oglFlip";
-//                ca.subtype = kCATransitionFromRight;
-//                ca.duration = 1.0;
-//                [self.navigationController.view.layer addAnimation:ca forKey:nil];
-//                
-                [self.navigationController popViewControllerAnimated:YES];
+                [self.navigationController popViewControllerAnimated:NO];
             }
             
             ZBarSymbol *symbol = nil;

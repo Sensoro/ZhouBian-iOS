@@ -173,7 +173,7 @@
 - (SelectButton *)buttonWithTitle:(NSString *)title{
     
     SelectButton *button = [SelectButton buttonWithType:UIButtonTypeSystem];
-    button.frame = CGRectMake(0, 0, 280, 50);
+    button.frame = CGRectMake(0, 0, 300, 50);
 //    button.layer.borderWidth = 1.0;
     button.layer.cornerRadius = 5.0;
     button.layer.borderColor = [UIColor whiteColor].CGColor;

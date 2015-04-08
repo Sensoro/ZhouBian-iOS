@@ -12,7 +12,6 @@
 		848332871ACB9D5C005ECD03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848332851ACB9D5C005ECD03 /* Main.storyboard */; };
 		848332891ACB9D5C005ECD03 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 848332881ACB9D5C005ECD03 /* Images.xcassets */; };
 		8483328C1ACB9D5C005ECD03 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8483328A1ACB9D5C005ECD03 /* LaunchScreen.xib */; };
-		848332981ACB9D5C005ECD03 /* BeaconConfigTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 848332971ACB9D5C005ECD03 /* BeaconConfigTests.m */; };
 		848332A31ACB9E9C005ECD03 /* SENQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848332A21ACB9E9C005ECD03 /* SENQRCodeViewController.m */; };
 		848332BF1ACB9ED1005ECD03 /* libzbar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 848332A61ACB9ED1005ECD03 /* libzbar.a */; };
 		848332C71ACB9FF0005ECD03 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 848332C91ACB9FF0005ECD03 /* Localizable.strings */; };
@@ -43,18 +42,8 @@
 		848333281ACD150D005ECD03 /* SelectButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 848333271ACD150D005ECD03 /* SelectButton.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		848332921ACB9D5C005ECD03 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 848332701ACB9D5B005ECD03 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 848332771ACB9D5C005ECD03;
-			remoteInfo = BeaconConfig;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		848332781ACB9D5C005ECD03 /* BeaconConfig.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeaconConfig.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		848332781ACB9D5C005ECD03 /* zhoubian.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zhoubian.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8483327C1ACB9D5C005ECD03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8483327D1ACB9D5C005ECD03 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8483327F1ACB9D5C005ECD03 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -62,9 +51,6 @@
 		848332861ACB9D5C005ECD03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		848332881ACB9D5C005ECD03 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8483328B1ACB9D5C005ECD03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		848332911ACB9D5C005ECD03 /* BeaconConfigTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeaconConfigTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		848332961ACB9D5C005ECD03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		848332971ACB9D5C005ECD03 /* BeaconConfigTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeaconConfigTests.m; sourceTree = "<group>"; };
 		848332A11ACB9E9C005ECD03 /* SENQRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SENQRCodeViewController.h; sourceTree = "<group>"; };
 		848332A21ACB9E9C005ECD03 /* SENQRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SENQRCodeViewController.m; sourceTree = "<group>"; };
 		848332A61ACB9ED1005ECD03 /* libzbar.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libzbar.a; sourceTree = "<group>"; };
@@ -158,22 +144,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8483328E1ACB9D5C005ECD03 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		8483326F1ACB9D5B005ECD03 = {
 			isa = PBXGroup;
 			children = (
-				8483327A1ACB9D5C005ECD03 /* BeaconConfig */,
+				8483327A1ACB9D5C005ECD03 /* Zhoubian */,
 				848332DD1ACBA22E005ECD03 /* Frameworks */,
-				848332941ACB9D5C005ECD03 /* BeaconConfigTests */,
 				848332791ACB9D5C005ECD03 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -181,13 +159,12 @@
 		848332791ACB9D5C005ECD03 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				848332781ACB9D5C005ECD03 /* BeaconConfig.app */,
-				848332911ACB9D5C005ECD03 /* BeaconConfigTests.xctest */,
+				848332781ACB9D5C005ECD03 /* zhoubian.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8483327A1ACB9D5C005ECD03 /* BeaconConfig */ = {
+		8483327A1ACB9D5C005ECD03 /* Zhoubian */ = {
 			isa = PBXGroup;
 			children = (
 				848332A41ACB9EB8005ECD03 /* Vendors */,
@@ -200,7 +177,7 @@
 				8483328A1ACB9D5C005ECD03 /* LaunchScreen.xib */,
 				8483327B1ACB9D5C005ECD03 /* Supporting Files */,
 			);
-			path = BeaconConfig;
+			path = Zhoubian;
 			sourceTree = "<group>";
 		};
 		8483327B1ACB9D5C005ECD03 /* Supporting Files */ = {
@@ -209,23 +186,6 @@
 				8483327C1ACB9D5C005ECD03 /* Info.plist */,
 				848332C91ACB9FF0005ECD03 /* Localizable.strings */,
 				8483327D1ACB9D5C005ECD03 /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		848332941ACB9D5C005ECD03 /* BeaconConfigTests */ = {
-			isa = PBXGroup;
-			children = (
-				848332971ACB9D5C005ECD03 /* BeaconConfigTests.m */,
-				848332951ACB9D5C005ECD03 /* Supporting Files */,
-			);
-			path = BeaconConfigTests;
-			sourceTree = "<group>";
-		};
-		848332951ACB9D5C005ECD03 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				848332961ACB9D5C005ECD03 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -411,9 +371,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		848332771ACB9D5C005ECD03 /* BeaconConfig */ = {
+		848332771ACB9D5C005ECD03 /* zhoubian */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8483329B1ACB9D5C005ECD03 /* Build configuration list for PBXNativeTarget "BeaconConfig" */;
+			buildConfigurationList = 8483329B1ACB9D5C005ECD03 /* Build configuration list for PBXNativeTarget "zhoubian" */;
 			buildPhases = (
 				848332741ACB9D5C005ECD03 /* Sources */,
 				848332751ACB9D5C005ECD03 /* Frameworks */,
@@ -423,28 +383,10 @@
 			);
 			dependencies = (
 			);
-			name = BeaconConfig;
+			name = zhoubian;
 			productName = BeaconConfig;
-			productReference = 848332781ACB9D5C005ECD03 /* BeaconConfig.app */;
+			productReference = 848332781ACB9D5C005ECD03 /* zhoubian.app */;
 			productType = "com.apple.product-type.application";
-		};
-		848332901ACB9D5C005ECD03 /* BeaconConfigTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8483329E1ACB9D5C005ECD03 /* Build configuration list for PBXNativeTarget "BeaconConfigTests" */;
-			buildPhases = (
-				8483328D1ACB9D5C005ECD03 /* Sources */,
-				8483328E1ACB9D5C005ECD03 /* Frameworks */,
-				8483328F1ACB9D5C005ECD03 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				848332931ACB9D5C005ECD03 /* PBXTargetDependency */,
-			);
-			name = BeaconConfigTests;
-			productName = BeaconConfigTests;
-			productReference = 848332911ACB9D5C005ECD03 /* BeaconConfigTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -457,14 +399,11 @@
 				TargetAttributes = {
 					848332771ACB9D5C005ECD03 = {
 						CreatedOnToolsVersion = 6.2;
-					};
-					848332901ACB9D5C005ECD03 = {
-						CreatedOnToolsVersion = 6.2;
-						TestTargetID = 848332771ACB9D5C005ECD03;
+						DevelopmentTeam = 8E42QMX22R;
 					};
 				};
 			};
-			buildConfigurationList = 848332731ACB9D5B005ECD03 /* Build configuration list for PBXProject "BeaconConfig" */;
+			buildConfigurationList = 848332731ACB9D5B005ECD03 /* Build configuration list for PBXProject "zhoubian" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -477,8 +416,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				848332771ACB9D5C005ECD03 /* BeaconConfig */,
-				848332901ACB9D5C005ECD03 /* BeaconConfigTests */,
+				848332771ACB9D5C005ECD03 /* zhoubian */,
 			);
 		};
 /* End PBXProject section */
@@ -493,13 +431,6 @@
 				848332C71ACB9FF0005ECD03 /* Localizable.strings in Resources */,
 				8483328C1ACB9D5C005ECD03 /* LaunchScreen.xib in Resources */,
 				848332891ACB9D5C005ECD03 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8483328F1ACB9D5C005ECD03 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,23 +464,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8483328D1ACB9D5C005ECD03 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				848332981ACB9D5C005ECD03 /* BeaconConfigTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		848332931ACB9D5C005ECD03 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 848332771ACB9D5C005ECD03 /* BeaconConfig */;
-			targetProxy = 848332921ACB9D5C005ECD03 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		848332851ACB9D5C005ECD03 /* Main.storyboard */ = {
@@ -663,20 +578,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = BeaconConfig/Info.plist;
+				INFOPLIST_FILE = Zhoubian/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/BeaconConfig/ZBarSDK",
-					"$(PROJECT_DIR)/BeaconConfig/SensoroBeaconKit",
+					"$(PROJECT_DIR)/Zhoubian/ZBarSDK",
+					"$(PROJECT_DIR)/Zhoubian/SensoroBeaconKit",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = zhoubian;
+				PROVISIONING_PROFILE = "96595369-2e3e-445c-8925-5d355bdbd520";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -685,62 +602,30 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = BeaconConfig/Info.plist;
+				INFOPLIST_FILE = Zhoubian/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/BeaconConfig/ZBarSDK",
-					"$(PROJECT_DIR)/BeaconConfig/SensoroBeaconKit",
+					"$(PROJECT_DIR)/Zhoubian/ZBarSDK",
+					"$(PROJECT_DIR)/Zhoubian/SensoroBeaconKit",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = zhoubian;
+				PROVISIONING_PROFILE = "96595369-2e3e-445c-8925-5d355bdbd520";
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		8483329F1ACB9D5C005ECD03 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = BeaconConfigTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BeaconConfig.app/BeaconConfig";
-			};
-			name = Debug;
-		};
-		848332A01ACB9D5C005ECD03 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = BeaconConfigTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BeaconConfig.app/BeaconConfig";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		848332731ACB9D5B005ECD03 /* Build configuration list for PBXProject "BeaconConfig" */ = {
+		848332731ACB9D5B005ECD03 /* Build configuration list for PBXProject "zhoubian" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				848332991ACB9D5C005ECD03 /* Debug */,
@@ -749,20 +634,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8483329B1ACB9D5C005ECD03 /* Build configuration list for PBXNativeTarget "BeaconConfig" */ = {
+		8483329B1ACB9D5C005ECD03 /* Build configuration list for PBXNativeTarget "zhoubian" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8483329C1ACB9D5C005ECD03 /* Debug */,
 				8483329D1ACB9D5C005ECD03 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8483329E1ACB9D5C005ECD03 /* Build configuration list for PBXNativeTarget "BeaconConfigTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8483329F1ACB9D5C005ECD03 /* Debug */,
-				848332A01ACB9D5C005ECD03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,0 +1,6 @@
+{
+    "version": "1.2.0",
+    "releaseNote-en": "Improvement:\n- 1. Initial version.",
+    "releaseNote-ch": "改进:\n- 1. 初始版本。",
+    "URL": "itms-services://?action=download-manifest&;url=https://static.sensoro.com/downloads/apps/sensoro-zhoubian/ios/zhoubian.plist"
+}

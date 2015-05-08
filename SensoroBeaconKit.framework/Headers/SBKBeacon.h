@@ -179,8 +179,7 @@ typedef void (^SBKBeaconCompletionBlock)(NSError *error);
 - (BOOL)writeProximityUUID:(NSUUID *)proximityUUID completion:(SBKBeaconCompletionBlock)completion;
 
 /**
- *  Updates major and minor of this beacon.
- *
+  *
  *  @param major      The major value.
  *  @param minor      The minor value.
  *  @param completion The block to execute after the writing is completed. If error parameter is nil means writing successfully.

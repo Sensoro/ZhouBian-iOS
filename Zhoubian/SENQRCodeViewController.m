@@ -260,16 +260,16 @@ static NSString * const kWeChatConfigPrefixs = @"https://zb.weixin.qq.com/nearby
     }
     
     // IOS 8 下固定焦距 0.35 最佳距离 15~20 cm
-    if (IsAfterIOS8) {
-        
-        if ([_captureDevice lockForConfiguration:nil]) {
-            [_captureDevice setFocusModeLockedWithLensPosition:0.35 completionHandler:^(CMTime syncTime) {
-            }];
-            [_captureDevice unlockForConfiguration];
-            
-        }
-        
-    }
+//    if (IsAfterIOS8) {
+//        
+//        if ([_captureDevice lockForConfiguration:nil]) {
+//            [_captureDevice setFocusModeLockedWithLensPosition:0.35 completionHandler:^(CMTime syncTime) {
+//            }];
+//            [_captureDevice unlockForConfiguration];
+//            
+//        }
+//        
+//    }
 
     AVCaptureDeviceInput *input = [AVCaptureDeviceInput deviceInputWithDevice:_captureDevice error:&error];
     

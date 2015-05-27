@@ -149,11 +149,18 @@
     // A0
     if ([value hasPrefix:@"A0"]&&value.length == 42 ) {
         isYunzi = YES;
+        sn = [value substringWithRange:NSMakeRange(3, 12)];
     }
     // B0 、C0
     if (value.length == 39) {
         isYunzi = YES;
         sn = [value substringWithRange:NSMakeRange(0,12)];
+    }
+    
+    if ([value hasPrefix:@"http://k6.lc/"]||[value hasPrefix:@"https://k6.lc/"]) {
+        isYunzi = YES;
+        sn = [value substringWithRange:NSMakeRange(13, 12)];
+
     }
     
     if (!isYunzi) {

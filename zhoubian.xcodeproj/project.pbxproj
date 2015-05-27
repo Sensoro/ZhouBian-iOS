@@ -40,6 +40,7 @@
 		848333231ACCEB4C005ECD03 /* FBKVOController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848333201ACCEB4C005ECD03 /* FBKVOController.m */; };
 		848333241ACCEB4C005ECD03 /* NSObject+FBKVOController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848333221ACCEB4C005ECD03 /* NSObject+FBKVOController.m */; };
 		848333281ACD150D005ECD03 /* SelectButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 848333271ACD150D005ECD03 /* SelectButton.m */; };
+		84FEC48A1B15AB60001244F1 /* NSString+Extention.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC4891B15AB60001244F1 /* NSString+Extention.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -126,6 +127,8 @@
 		848333221ACCEB4C005ECD03 /* NSObject+FBKVOController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+FBKVOController.m"; sourceTree = "<group>"; };
 		848333261ACD150D005ECD03 /* SelectButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectButton.h; sourceTree = "<group>"; };
 		848333271ACD150D005ECD03 /* SelectButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectButton.m; sourceTree = "<group>"; };
+		84FEC4881B15AB60001244F1 /* NSString+Extention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extention.h"; sourceTree = "<group>"; };
+		84FEC4891B15AB60001244F1 /* NSString+Extention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extention.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -252,6 +255,8 @@
 				848332D41ACBA0D4005ECD03 /* UIImage+Color.m */,
 				848332F81ACBE43A005ECD03 /* SNBeaconObserver.h */,
 				848332F91ACBE43A005ECD03 /* SNBeaconObserver.m */,
+				84FEC4881B15AB60001244F1 /* NSString+Extention.h */,
+				84FEC4891B15AB60001244F1 /* NSString+Extention.m */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -460,6 +465,7 @@
 				848333241ACCEB4C005ECD03 /* NSObject+FBKVOController.m in Sources */,
 				848332D01ACBA074005ECD03 /* BaseNavigationController.m in Sources */,
 				848332E01ACBCD22005ECD03 /* FunctionSelectController.m in Sources */,
+				84FEC48A1B15AB60001244F1 /* NSString+Extention.m in Sources */,
 				848333231ACCEB4C005ECD03 /* FBKVOController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

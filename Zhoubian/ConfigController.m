@@ -61,10 +61,15 @@
         
         NSLog(@">>>>>>>>>> Start config >>>>>>>>");
         [loadingSpin startAnimating];
+
         [_configBeacon connectWithCompletion:^(NSError *error) {
             if (!error) {
                 NSLog(@"Connect successful %@",[SNBeaconObserver sharedInstance].configBeacon.beaconID);
                 __block int count = 0;
+                
+                dispatch_group_t group = dispatch_group_create();
+                dispatch_group_enter(group);
+                
                 [_configBeacon writeProximityUUID:[BroadcastConfig sharedBroadcastConfig].uuid completion:^(NSError *error) {
                     if (!error) {
                         NSLog(@"UUID <<<<< %@",[BroadcastConfig sharedBroadcastConfig].uuid.UUIDString);
@@ -87,10 +92,13 @@
                             [self backToPro];
                         });
                     }
+                    dispatch_group_leave(group);
+
                 }];
                 
                 NSNumber *major = @([BroadcastConfig sharedBroadcastConfig].major);
                 NSNumber *minor = @([BroadcastConfig sharedBroadcastConfig].minor);
+                dispatch_group_enter(group);
                 [_configBeacon writeMajor:major minor:minor completion:^(NSError *error) {
                     if (!error) {
                         NSLog(@"Major Minor <<<<< %@ %@",major,minor);
@@ -99,6 +107,7 @@
                         NSLog(@"Error: <<<<<<<<%@",error.localizedDescription);
                         configSuccess &= NO;
                     }
+                    
                     ++count;
                     if (count == 2) {
                         [_loadingView removeFromSuperview];
@@ -113,6 +122,7 @@
                         });
 
                     }
+                    dispatch_group_leave(group);
 
                 }];
                 

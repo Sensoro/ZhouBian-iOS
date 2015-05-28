@@ -406,6 +406,11 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info{
             for(symbol in scanner.results)
                 break;
             NSString * value = symbol.data;
+            
+            if ([value canBeConvertedToEncoding:NSShiftJISStringEncoding]){
+                value = [NSString stringWithCString:[value cStringUsingEncoding: NSShiftJISStringEncoding] encoding:NSUTF8StringEncoding];
+            }
+
             if (self.completion != nil) {
                 self.completion(value);
             }

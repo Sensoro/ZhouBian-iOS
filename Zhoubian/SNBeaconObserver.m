@@ -7,7 +7,7 @@
 //
 
 #import "SNBeaconObserver.h"
-#import <SensoroBeaconKit/SensoroBeaconKit.h>
+#import "SBKBeaconManager.h"
 #import "SVProgressHUD.h"
 
 

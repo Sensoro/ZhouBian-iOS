@@ -7,7 +7,7 @@
 //
 
 #import "ConfigController.h"
-#import <SensoroBeaconKit/SBKBeacon.h>
+#import "SBKBeacon.h"
 #import "SNBeaconObserver.h"
 #import "BroadcastConfig.h"
 #import "RTSpinKitView.h"

@@ -13,7 +13,7 @@
 #import "SVProgressHUD.h"
 #import "ConfigController.h"
 #import "SNBeaconObserver.h"
-#import <SensoroBeaconKit/SBKBeacon.h>
+#import "SBKBeacon.h"
 #import "SelectButton.h"
 
 @interface FunctionSelectController ()

@@ -33,7 +33,6 @@
 		848333091ACC0A4F005ECD03 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848333081ACC0A4F005ECD03 /* CoreLocation.framework */; };
 		8483330B1ACC0A55005ECD03 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8483330A1ACC0A55005ECD03 /* CoreBluetooth.framework */; };
 		8483330D1ACC0A7B005ECD03 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8483330C1ACC0A7B005ECD03 /* Security.framework */; };
-		8483330F1ACC0C9A005ECD03 /* SensoroBeaconKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8483330E1ACC0C9A005ECD03 /* SensoroBeaconKit.framework */; };
 		848333151ACC3AF8005ECD03 /* MultiplePulsingHaloLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 848333121ACC3AF8005ECD03 /* MultiplePulsingHaloLayer.m */; };
 		848333161ACC3AF8005ECD03 /* PulsingHaloLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 848333141ACC3AF8005ECD03 /* PulsingHaloLayer.m */; };
 		8483331B1ACC423F005ECD03 /* RTSpinKitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8483331A1ACC423F005ECD03 /* RTSpinKitView.m */; };
@@ -41,6 +40,7 @@
 		848333241ACCEB4C005ECD03 /* NSObject+FBKVOController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848333221ACCEB4C005ECD03 /* NSObject+FBKVOController.m */; };
 		848333281ACD150D005ECD03 /* SelectButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 848333271ACD150D005ECD03 /* SelectButton.m */; };
 		84FEC48A1B15AB60001244F1 /* NSString+Extention.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC4891B15AB60001244F1 /* NSString+Extention.m */; };
+		84FEC4A81B16D9CC001244F1 /* libSensoroBeaconKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84FEC4A71B16D9CC001244F1 /* libSensoroBeaconKit.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -113,7 +113,6 @@
 		848333081ACC0A4F005ECD03 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		8483330A1ACC0A55005ECD03 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		8483330C1ACC0A7B005ECD03 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		8483330E1ACC0C9A005ECD03 /* SensoroBeaconKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SensoroBeaconKit.framework; sourceTree = "<group>"; };
 		848333111ACC3AF8005ECD03 /* MultiplePulsingHaloLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiplePulsingHaloLayer.h; sourceTree = "<group>"; };
 		848333121ACC3AF8005ECD03 /* MultiplePulsingHaloLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiplePulsingHaloLayer.m; sourceTree = "<group>"; };
 		848333131ACC3AF8005ECD03 /* PulsingHaloLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PulsingHaloLayer.h; sourceTree = "<group>"; };
@@ -129,6 +128,13 @@
 		848333271ACD150D005ECD03 /* SelectButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectButton.m; sourceTree = "<group>"; };
 		84FEC4881B15AB60001244F1 /* NSString+Extention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extention.h"; sourceTree = "<group>"; };
 		84FEC4891B15AB60001244F1 /* NSString+Extention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extention.m"; sourceTree = "<group>"; };
+		84FEC4A11B16D9CC001244F1 /* SBKBeacon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBKBeacon.h; sourceTree = "<group>"; };
+		84FEC4A21B16D9CC001244F1 /* SBKBeaconID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBKBeaconID.h; sourceTree = "<group>"; };
+		84FEC4A31B16D9CC001244F1 /* SBKBeaconManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBKBeaconManager.h; sourceTree = "<group>"; };
+		84FEC4A41B16D9CC001244F1 /* SBKConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBKConstants.h; sourceTree = "<group>"; };
+		84FEC4A51B16D9CC001244F1 /* SBKError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBKError.h; sourceTree = "<group>"; };
+		84FEC4A61B16D9CC001244F1 /* SBKUnitConvertHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBKUnitConvertHelper.h; sourceTree = "<group>"; };
+		84FEC4A71B16D9CC001244F1 /* libSensoroBeaconKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSensoroBeaconKit.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,11 +142,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8483330F1ACC0C9A005ECD03 /* SensoroBeaconKit.framework in Frameworks */,
 				8483330D1ACC0A7B005ECD03 /* Security.framework in Frameworks */,
 				8483330B1ACC0A55005ECD03 /* CoreBluetooth.framework in Frameworks */,
 				848333091ACC0A4F005ECD03 /* CoreLocation.framework in Frameworks */,
 				848332DC1ACBA225005ECD03 /* libiconv.dylib in Frameworks */,
+				84FEC4A81B16D9CC001244F1 /* libSensoroBeaconKit.a in Frameworks */,
 				848332DA1ACBA216005ECD03 /* libz.dylib in Frameworks */,
 				848332D81ACBA20F005ECD03 /* libicucore.dylib in Frameworks */,
 				848332BF1ACB9ED1005ECD03 /* libzbar.a in Frameworks */,
@@ -199,6 +205,7 @@
 				8483331D1ACCEB4C005ECD03 /* FBKVOController */,
 				848333181ACC423F005ECD03 /* RTSpinKitView */,
 				848333101ACC3AF8005ECD03 /* PulsingHalo */,
+				84FEC49F1B16D9CC001244F1 /* SensoroBeaconKit */,
 				848332FB1ACBE511005ECD03 /* SVProgressHUD */,
 				848332A51ACB9ED1005ECD03 /* ZBarSDK */,
 			);
@@ -299,7 +306,6 @@
 		848332DD1ACBA22E005ECD03 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8483330E1ACC0C9A005ECD03 /* SensoroBeaconKit.framework */,
 				8483330C1ACC0A7B005ECD03 /* Security.framework */,
 				8483330A1ACC0A55005ECD03 /* CoreBluetooth.framework */,
 				848333081ACC0A4F005ECD03 /* CoreLocation.framework */,
@@ -371,6 +377,29 @@
 				848333271ACD150D005ECD03 /* SelectButton.m */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		84FEC49F1B16D9CC001244F1 /* SensoroBeaconKit */ = {
+			isa = PBXGroup;
+			children = (
+				84FEC4A01B16D9CC001244F1 /* Headers */,
+				84FEC4A71B16D9CC001244F1 /* libSensoroBeaconKit.a */,
+			);
+			name = SensoroBeaconKit;
+			path = SVProgressHUD/SensoroBeaconKit;
+			sourceTree = "<group>";
+		};
+		84FEC4A01B16D9CC001244F1 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				84FEC4A11B16D9CC001244F1 /* SBKBeacon.h */,
+				84FEC4A21B16D9CC001244F1 /* SBKBeaconID.h */,
+				84FEC4A31B16D9CC001244F1 /* SBKBeaconManager.h */,
+				84FEC4A41B16D9CC001244F1 /* SBKConstants.h */,
+				84FEC4A51B16D9CC001244F1 /* SBKError.h */,
+				84FEC4A61B16D9CC001244F1 /* SBKUnitConvertHelper.h */,
+			);
+			path = Headers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -597,6 +626,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Zhoubian/ZBarSDK",
 					"$(PROJECT_DIR)/Zhoubian/SensoroBeaconKit",
+					"$(PROJECT_DIR)/Zhoubian/SVProgressHUD/SensoroBeaconKit",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = zhoubian;
@@ -622,6 +652,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Zhoubian/ZBarSDK",
 					"$(PROJECT_DIR)/Zhoubian/SensoroBeaconKit",
+					"$(PROJECT_DIR)/Zhoubian/SVProgressHUD/SensoroBeaconKit",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = zhoubian;

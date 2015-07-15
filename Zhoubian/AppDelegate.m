@@ -11,6 +11,7 @@
 #import "BaseNavigationController.h"
 #import "SNBeaconObserver.h"
 #import "SVProgressHUD.h"
+#import "SBKBeaconManager.h"
 
 @interface AppDelegate ()
 
@@ -31,6 +32,7 @@
     BaseNavigationController *nav = [[BaseNavigationController alloc]initWithRootViewController:controller];
     self.window.rootViewController = nav;
     
+    [[SBKBeaconManager sharedInstance] requestAlwaysAuthorization];
     
     [[SNBeaconObserver sharedInstance] startService:NO];
 

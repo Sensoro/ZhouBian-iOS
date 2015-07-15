@@ -9,7 +9,7 @@
 #import "SNBeaconObserver.h"
 #import "SBKBeaconManager.h"
 #import "SVProgressHUD.h"
-
+#import "BMMacroDefinition.h"
 
 //static NSString * const kBroadcastKeyStore = @"kBroadcastKeyStore";
 
@@ -18,7 +18,7 @@
 
 @property (strong, nonatomic) CBCentralManager *bluetoothStateManger;
 @property (strong, nonatomic) NSArray * supportedProximityUUIDs; // 支持的UUID
-
+@property (strong, nonatomic) CLLocationManager *locationManager;
 @end
 
 @implementation SNBeaconObserver
@@ -41,9 +41,14 @@
 }
 
 - (void)startService:(BOOL)isTips{
+   
+    self.locationManager = [[CLLocationManager alloc] init];
+    if (IsAfterIOS8) {
+        [self.locationManager requestAlwaysAuthorization];
+    }
+    
     
     // start SBK Serverce
-    [[SBKBeaconManager sharedInstance] requestAlwaysAuthorization];
 
     _supportedProximityUUIDs =
     @[[[NSUUID alloc] initWithUUIDString:@"23A01AF0-232A-4518-9C0E-323FB773F5EF"], //Sensoro
@@ -52,7 +57,6 @@
       [[NSUUID alloc] initWithUUIDString:@"63EA09C2-5345-4E6D-9776-26B9C6FC126C"],// Random for C54
       [[NSUUID alloc] initWithUUIDString:@"FDA50693-A4E2-4FB1-AFCF-C6EB07647825"]// weixin
       ];
-    
         
     //添加解密用密钥
     [[SBKBeaconManager sharedInstance] addBroadcastKey:@"7b4b5ff594fdaf8f9fc7f2b494e400016f461205"];
@@ -151,6 +155,8 @@
         [self.allYunziDict setObject:beacon forKey:beacon.serialNumber];
         
     }
+    
 }
+
 
 @end

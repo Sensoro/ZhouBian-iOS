@@ -107,11 +107,22 @@
  *
  *  @return Beacon instance.
  *
- *  @discussion This mehtod will always return a beacon instance even if the beacon has not been ranged. The beacon with same ID will only have one instance.
+ *  @discussion This mehtod will return nil if the beacon has not been ranged. The beacon with same ID will only have one instance.
  *
  *  @warning The SBKBeaconID object must have major and minor properties.
  */
 - (SBKBeacon *)beaconWithID:(SBKBeaconID *)beaconID;
+
+/**
+ *  Get the beacon instance with CLBeacon object.
+ *
+ *  @param beacon Using CLBeacon object to identify the sensoro beacon you want.
+ *
+ *  @return SBKBeacon instance.
+ *
+ *  @discussion This mehtod will return a sensoso beacon corresponding CLBeacon object. if this beacon is not a sensoro beacon, it will return nil.
+ */
+- (SBKBeacon *)beaconWithCLBeacon:(CLBeacon *)beacon;
 
 /**
  *  Get the beacon instances in range now.
@@ -127,7 +138,7 @@
 - (NSArray *)allBeacons;
 
 /**
- *  Disable the alert showed when BLE was power off. Defualt was show the alert dialog.
+ *  Disable the alert that was showed when BLE was power off. Defualt was show the alert dialog.
  *  You can call this method to disable this alert, before call other method.
  *
  */
@@ -145,7 +156,20 @@
  */
 @property (readwrite, nonatomic) NSTimeInterval outOfRangeDelay;
 
+/**
+ * return current SDK version.
+ *
+ */
 @property (readonly, nonatomic) NSString* version;
+
+/**
+ *  Set whether enable duplicate key for scanning device in background mode.
+ *  default is NO，To set this property before call startRangingBeaconsWithID.
+ *
+ *  @discussion if set this property to YES, the SDK will continuously receive packet from device, 
+    but this increase the power consumption, NO, SDK will receive one packet from device unless this packet was changed.
+ */
+@property (readwrite, nonatomic) BOOL duplicateKeyBLE;
 
 - (void)setDebugModeActive:(BOOL)active;
 
@@ -186,6 +210,16 @@
  *  @param beacons       An array of SBKBeacon objects representing the beacons currently in range. You can use the information in these objects to determine the range of each beacon and its identifying information.
  */
 - (void)beaconManager:(SBKBeaconManager *)beaconManager scanDidFinishWithBeacons:(NSArray *)beacons;
+
+/**
+ *  Tells the delegate that if one or more beacons are in range. those beacons include sensoro's beacons.
+ *
+ *  @param beaconManager The beacon manager object reporting the event.
+ *  @param beacons       An array of CLBeacon objects representing the beacons currently in range. You can use the information in these objects to determine the range of each beacon and its identifying information.
+ *  @discussion you can use beaconWithCLBeacon: of SBKBeaconManager to know whether this beacon is a sensoro beacon. because of ble scan delay, it is possible that a beacon is not sensoro beacon at first, after a little time, it become a sensoro beacon.
+ *
+ */
+- (void)beaconManager:(SBKBeaconManager *)beaconManager didRangeBeacons:(NSArray *)beacons inRegion:(SBKBeaconID*) region;
 
 /**
  *  Tells the delegate that the authorization status for the application changed.

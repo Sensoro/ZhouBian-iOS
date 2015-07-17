@@ -42,11 +42,11 @@
 
 - (void)startService:(BOOL)isTips{
    
-    self.locationManager = [[CLLocationManager alloc] init];
-    if (IsAfterIOS8) {
-        [self.locationManager requestAlwaysAuthorization];
-    }
-    
+//    self.locationManager = [[CLLocationManager alloc] init];
+//    if (IsAfterIOS8) {
+//        [self.locationManager requestAlwaysAuthorization];
+//    }
+//    
     
     // start SBK Serverce
 
@@ -148,10 +148,10 @@
         if(!beacon.serialNumber || !beacon.beaconID){
             continue ;
         }
-
-        if ([beacon.serialNumber isEqualToString:@"0117C53A2F26"]) {
-            NSLog(@"-------------------->%@",beacon.serialNumber);
-        }
+//
+//        if ([beacon.serialNumber isEqualToString:@"0117C53A2F26"]) {
+//            NSLog(@"-------------------->%@",beacon.serialNumber);
+//        }
         [self.allYunziDict setObject:beacon forKey:beacon.serialNumber];
         
     }

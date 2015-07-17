@@ -265,6 +265,25 @@ typedef void (^SBKBeaconCompletionBlock)(NSError *error);
  */
 - (BOOL)enableiBeaconWithCompletion:(SBKBeaconCompletionBlock)completion;
 
+
+/**
+ *  Disable the AliBeacon broadcast.
+ *
+ *  @param completion The block to execute after the writing is completed. If error parameter is nil means writing successfully.
+ *
+ *  @return Can this writing operation be executed.
+ */
+- (BOOL)disableAliBeaconWithCompletion:(SBKBeaconCompletionBlock)completion;
+
+/**
+ *  Enable the AliBeacon broadcast.
+ *
+ *  @param completion The block to execute after the writing is completed. If error parameter is nil means writing successfully.
+ *
+ *  @return Can this writing operation be executed.
+ */
+- (BOOL)enableAliBeaconWithCompletion:(SBKBeaconCompletionBlock)completion;
+
 /**
  *  Disable the enhance broadcast.
  *
@@ -427,6 +446,13 @@ typedef void (^SBKBeaconCompletionBlock)(NSError *error);
  *
  */
 @property (nonatomic, readonly) NSNumber * inEnergySaving;
+
+/**
+ *
+ *  The flag whether device is broadcasting ali beacon info.
+ *
+ */
+@property (nonatomic, readonly) NSNumber * aliBeacon;
 
 /**
  *

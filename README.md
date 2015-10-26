@@ -6,6 +6,8 @@
 
 1. 首先使用周边工具扫描相关的 Beacon 配置信息的二维码，样例如下
 
+![wechat-QRCode-Image](https://raw.githubusercontent.com/Sensoro/ZhouBian-iOS/master/resource/wechat.jpg)
+
 2. 二维码合法会进入，功能选择，您可以选择用 iPhone、iPad 模拟Beacon
 
 3. 模拟 Beacon 成功后会有水波纹动画提示

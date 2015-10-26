@@ -1,6 +1,6 @@
 {
-    "version": "1.2.2",
-    "releaseNote-en": "Improvement:\n- 1. Add support for new version QRCode. \n. - 2. Bug Fix",
-    "releaseNote-ch": "改进:\n- 1. 支持新版二维码。\n - 2. Bug 修正",
+    "version": "1.2.4",
+    "releaseNote-en": "Improvement:\n- 1. Add support for SmartBeacon 4AA Pro (C1). \n. - 2. Bug Fix",
+    "releaseNote-ch": "改进:\n- 1. 添加对云盒 Pro (C1)的支持。\n - 2. Bug 修正",
     "URL": "itms-services://?action=download-manifest&;url=https://static.sensoro.com/downloads/apps/sensoro-zhoubian/ios/zhoubian.plist"
 }

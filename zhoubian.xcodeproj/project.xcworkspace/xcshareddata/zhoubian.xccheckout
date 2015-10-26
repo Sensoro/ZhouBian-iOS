@@ -11,7 +11,7 @@
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>B0CD497C5EE316F54C422338F0151DF706CA05B8</key>
-		<string>https://github.com/Sensoro/ZhouBian-iOS.git</string>
+		<string>github.com:Sensoro/ZhouBian-iOS.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>zhoubian.xcodeproj/project.xcworkspace</string>
@@ -21,7 +21,7 @@
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/Sensoro/ZhouBian-iOS.git</string>
+	<string>github.com:Sensoro/ZhouBian-iOS.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>

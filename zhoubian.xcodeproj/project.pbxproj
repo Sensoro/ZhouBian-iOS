@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63C18E681BD0CEC30044895D /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 63C18E671BD0CEC30044895D /* libiconv.tbd */; };
+		63C18E6A1BD0CECD0044895D /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 63C18E691BD0CECD0044895D /* libz.tbd */; };
+		63C18E6C1BD0CEDC0044895D /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 63C18E6B1BD0CEDC0044895D /* libicucore.tbd */; };
+		63C18E771BD0CFBF0044895D /* libSensoroBeaconKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63C18E761BD0CFBF0044895D /* libSensoroBeaconKit.a */; };
 		8483327E1ACB9D5C005ECD03 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8483327D1ACB9D5C005ECD03 /* main.m */; };
 		848332811ACB9D5C005ECD03 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 848332801ACB9D5C005ECD03 /* AppDelegate.m */; };
 		848332871ACB9D5C005ECD03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848332851ACB9D5C005ECD03 /* Main.storyboard */; };
@@ -18,9 +22,6 @@
 		848332D01ACBA074005ECD03 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848332CF1ACBA074005ECD03 /* BaseNavigationController.m */; };
 		848332D51ACBA0D4005ECD03 /* UIImage+BM.m in Sources */ = {isa = PBXBuildFile; fileRef = 848332D21ACBA0D4005ECD03 /* UIImage+BM.m */; };
 		848332D61ACBA0D4005ECD03 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 848332D41ACBA0D4005ECD03 /* UIImage+Color.m */; };
-		848332D81ACBA20F005ECD03 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 848332D71ACBA20F005ECD03 /* libicucore.dylib */; };
-		848332DA1ACBA216005ECD03 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 848332D91ACBA216005ECD03 /* libz.dylib */; };
-		848332DC1ACBA225005ECD03 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 848332DB1ACBA225005ECD03 /* libiconv.dylib */; };
 		848332E01ACBCD22005ECD03 /* FunctionSelectController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848332DF1ACBCD22005ECD03 /* FunctionSelectController.m */; };
 		848332E41ACBD072005ECD03 /* SimulateController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848332E31ACBD072005ECD03 /* SimulateController.m */; };
 		848332E71ACBD096005ECD03 /* ConfigController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848332E61ACBD096005ECD03 /* ConfigController.m */; };
@@ -40,10 +41,20 @@
 		848333241ACCEB4C005ECD03 /* NSObject+FBKVOController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848333221ACCEB4C005ECD03 /* NSObject+FBKVOController.m */; };
 		848333281ACD150D005ECD03 /* SelectButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 848333271ACD150D005ECD03 /* SelectButton.m */; };
 		84FEC48A1B15AB60001244F1 /* NSString+Extention.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC4891B15AB60001244F1 /* NSString+Extention.m */; };
-		84FEC4A81B16D9CC001244F1 /* libSensoroBeaconKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84FEC4A71B16D9CC001244F1 /* libSensoroBeaconKit.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		63C18E671BD0CEC30044895D /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		63C18E691BD0CECD0044895D /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		63C18E6B1BD0CEDC0044895D /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		63C18E6F1BD0CFBF0044895D /* SBKBeacon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBKBeacon.h; sourceTree = "<group>"; };
+		63C18E701BD0CFBF0044895D /* SBKBeaconID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBKBeaconID.h; sourceTree = "<group>"; };
+		63C18E711BD0CFBF0044895D /* SBKBeaconManager+Cloud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SBKBeaconManager+Cloud.h"; sourceTree = "<group>"; };
+		63C18E721BD0CFBF0044895D /* SBKBeaconManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBKBeaconManager.h; sourceTree = "<group>"; };
+		63C18E731BD0CFBF0044895D /* SBKConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBKConstants.h; sourceTree = "<group>"; };
+		63C18E741BD0CFBF0044895D /* SBKError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBKError.h; sourceTree = "<group>"; };
+		63C18E751BD0CFBF0044895D /* SBKUnitConvertHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBKUnitConvertHelper.h; sourceTree = "<group>"; };
+		63C18E761BD0CFBF0044895D /* libSensoroBeaconKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSensoroBeaconKit.a; sourceTree = "<group>"; };
 		848332781ACB9D5C005ECD03 /* zhoubian.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zhoubian.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8483327C1ACB9D5C005ECD03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8483327D1ACB9D5C005ECD03 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -90,9 +101,6 @@
 		848332D21ACBA0D4005ECD03 /* UIImage+BM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BM.m"; sourceTree = "<group>"; };
 		848332D31ACBA0D4005ECD03 /* UIImage+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
 		848332D41ACBA0D4005ECD03 /* UIImage+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
-		848332D71ACBA20F005ECD03 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
-		848332D91ACBA216005ECD03 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		848332DB1ACBA225005ECD03 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
 		848332DE1ACBCD22005ECD03 /* FunctionSelectController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunctionSelectController.h; sourceTree = "<group>"; };
 		848332DF1ACBCD22005ECD03 /* FunctionSelectController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FunctionSelectController.m; sourceTree = "<group>"; };
 		848332E21ACBD072005ECD03 /* SimulateController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimulateController.h; sourceTree = "<group>"; };
@@ -128,13 +136,6 @@
 		848333271ACD150D005ECD03 /* SelectButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectButton.m; sourceTree = "<group>"; };
 		84FEC4881B15AB60001244F1 /* NSString+Extention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extention.h"; sourceTree = "<group>"; };
 		84FEC4891B15AB60001244F1 /* NSString+Extention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extention.m"; sourceTree = "<group>"; };
-		84FEC4A11B16D9CC001244F1 /* SBKBeacon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBKBeacon.h; sourceTree = "<group>"; };
-		84FEC4A21B16D9CC001244F1 /* SBKBeaconID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBKBeaconID.h; sourceTree = "<group>"; };
-		84FEC4A31B16D9CC001244F1 /* SBKBeaconManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBKBeaconManager.h; sourceTree = "<group>"; };
-		84FEC4A41B16D9CC001244F1 /* SBKConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBKConstants.h; sourceTree = "<group>"; };
-		84FEC4A51B16D9CC001244F1 /* SBKError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBKError.h; sourceTree = "<group>"; };
-		84FEC4A61B16D9CC001244F1 /* SBKUnitConvertHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBKUnitConvertHelper.h; sourceTree = "<group>"; };
-		84FEC4A71B16D9CC001244F1 /* libSensoroBeaconKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSensoroBeaconKit.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,13 +143,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63C18E6C1BD0CEDC0044895D /* libicucore.tbd in Frameworks */,
+				63C18E6A1BD0CECD0044895D /* libz.tbd in Frameworks */,
+				63C18E681BD0CEC30044895D /* libiconv.tbd in Frameworks */,
 				8483330D1ACC0A7B005ECD03 /* Security.framework in Frameworks */,
+				63C18E771BD0CFBF0044895D /* libSensoroBeaconKit.a in Frameworks */,
 				8483330B1ACC0A55005ECD03 /* CoreBluetooth.framework in Frameworks */,
 				848333091ACC0A4F005ECD03 /* CoreLocation.framework in Frameworks */,
-				848332DC1ACBA225005ECD03 /* libiconv.dylib in Frameworks */,
-				84FEC4A81B16D9CC001244F1 /* libSensoroBeaconKit.a in Frameworks */,
-				848332DA1ACBA216005ECD03 /* libz.dylib in Frameworks */,
-				848332D81ACBA20F005ECD03 /* libicucore.dylib in Frameworks */,
 				848332BF1ACB9ED1005ECD03 /* libzbar.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -156,6 +157,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		63C18E6D1BD0CFBF0044895D /* SensoroBeaconKit */ = {
+			isa = PBXGroup;
+			children = (
+				63C18E6E1BD0CFBF0044895D /* Headers */,
+				63C18E761BD0CFBF0044895D /* libSensoroBeaconKit.a */,
+			);
+			path = SensoroBeaconKit;
+			sourceTree = "<group>";
+		};
+		63C18E6E1BD0CFBF0044895D /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				63C18E6F1BD0CFBF0044895D /* SBKBeacon.h */,
+				63C18E701BD0CFBF0044895D /* SBKBeaconID.h */,
+				63C18E711BD0CFBF0044895D /* SBKBeaconManager+Cloud.h */,
+				63C18E721BD0CFBF0044895D /* SBKBeaconManager.h */,
+				63C18E731BD0CFBF0044895D /* SBKConstants.h */,
+				63C18E741BD0CFBF0044895D /* SBKError.h */,
+				63C18E751BD0CFBF0044895D /* SBKUnitConvertHelper.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
 		8483326F1ACB9D5B005ECD03 = {
 			isa = PBXGroup;
 			children = (
@@ -202,10 +226,10 @@
 		848332A41ACB9EB8005ECD03 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				63C18E6D1BD0CFBF0044895D /* SensoroBeaconKit */,
 				8483331D1ACCEB4C005ECD03 /* FBKVOController */,
 				848333181ACC423F005ECD03 /* RTSpinKitView */,
 				848333101ACC3AF8005ECD03 /* PulsingHalo */,
-				84FEC49F1B16D9CC001244F1 /* SensoroBeaconKit */,
 				848332FB1ACBE511005ECD03 /* SVProgressHUD */,
 				848332A51ACB9ED1005ECD03 /* ZBarSDK */,
 			);
@@ -306,12 +330,12 @@
 		848332DD1ACBA22E005ECD03 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				63C18E6B1BD0CEDC0044895D /* libicucore.tbd */,
+				63C18E691BD0CECD0044895D /* libz.tbd */,
+				63C18E671BD0CEC30044895D /* libiconv.tbd */,
 				8483330C1ACC0A7B005ECD03 /* Security.framework */,
 				8483330A1ACC0A55005ECD03 /* CoreBluetooth.framework */,
 				848333081ACC0A4F005ECD03 /* CoreLocation.framework */,
-				848332DB1ACBA225005ECD03 /* libiconv.dylib */,
-				848332D71ACBA20F005ECD03 /* libicucore.dylib */,
-				848332D91ACBA216005ECD03 /* libz.dylib */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -379,29 +403,6 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
-		84FEC49F1B16D9CC001244F1 /* SensoroBeaconKit */ = {
-			isa = PBXGroup;
-			children = (
-				84FEC4A01B16D9CC001244F1 /* Headers */,
-				84FEC4A71B16D9CC001244F1 /* libSensoroBeaconKit.a */,
-			);
-			name = SensoroBeaconKit;
-			path = SVProgressHUD/SensoroBeaconKit;
-			sourceTree = "<group>";
-		};
-		84FEC4A01B16D9CC001244F1 /* Headers */ = {
-			isa = PBXGroup;
-			children = (
-				84FEC4A11B16D9CC001244F1 /* SBKBeacon.h */,
-				84FEC4A21B16D9CC001244F1 /* SBKBeaconID.h */,
-				84FEC4A31B16D9CC001244F1 /* SBKBeaconManager.h */,
-				84FEC4A41B16D9CC001244F1 /* SBKConstants.h */,
-				84FEC4A51B16D9CC001244F1 /* SBKError.h */,
-				84FEC4A61B16D9CC001244F1 /* SBKUnitConvertHelper.h */,
-			);
-			path = Headers;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -428,7 +429,7 @@
 		848332701ACB9D5B005ECD03 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0620;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = Sensoro;
 				TargetAttributes = {
 					848332771ACB9D5C005ECD03 = {
@@ -553,6 +554,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -615,7 +617,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_RESOURCE_RULES_PATH = "$(SDKROOT)/ResourceRules.plist";
+				CODE_SIGN_RESOURCE_RULES_PATH = "";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -630,6 +633,7 @@
 					"$(PROJECT_DIR)/Zhoubian/SVProgressHUD/SensoroBeaconKit",
 				);
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sensoro.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = zhoubian;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -642,7 +646,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				CODE_SIGN_RESOURCE_RULES_PATH = "$(SDKROOT)/ResourceRules.plist";
+				CODE_SIGN_RESOURCE_RULES_PATH = "";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -657,8 +662,9 @@
 					"$(PROJECT_DIR)/Zhoubian/SVProgressHUD/SensoroBeaconKit",
 				);
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sensoro.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = zhoubian;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "cea68ac5-3d3a-4725-a3bf-e5cdedc833cb";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

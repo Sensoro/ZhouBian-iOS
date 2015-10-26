@@ -149,9 +149,9 @@
             continue ;
         }
 
-        if ([beacon.serialNumber isEqualToString:@"0117C53A2F26"]) {
-            NSLog(@"-------------------->%@",beacon.serialNumber);
-        }
+//        if ([beacon.serialNumber isEqualToString:@"0117C53A2F26"]) {
+//            NSLog(@"-------------------->%@",beacon.serialNumber);
+//        }
         [self.allYunziDict setObject:beacon forKey:beacon.serialNumber];
         
     }
